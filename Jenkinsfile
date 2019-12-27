@@ -10,7 +10,7 @@ pipeline {
       tools {
         // Specify Tool Name from your global tool configuration
 		jdk 'JDK8'
-        maven 'maven3'
+        maven 'Maven3'
       }
       steps {
 	      // Some Step
