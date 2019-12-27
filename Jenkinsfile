@@ -14,7 +14,7 @@ pipeline {
       }
       steps {
 			// Some Step
-	      'mvn clean package'
+	      powershell label: '', script: 'mvn clean package'
       }
     }
   }
