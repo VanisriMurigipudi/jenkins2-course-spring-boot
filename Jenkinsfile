@@ -9,11 +9,12 @@ pipeline {
     stage('Compile') { 
       tools {
         // Specify Tool Name from your global tool configuration
-		jdk 'jdk11'
-        maven 'maven-3.6.1'
+		jdk 'JDK8'
+        maven 'maven-3'
       }
       steps {
 			// Some Step
+	      'mvn clean package'
       }
     }
   }
